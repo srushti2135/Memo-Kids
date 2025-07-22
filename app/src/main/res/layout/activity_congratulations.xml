@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".CongratulationsActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/celebrationAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/level_complete_confetti" app:lottie_speed="1.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="24dp"
+        android:gravity="center"
+        android:background="@android:color/transparent"> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginBottom="16dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have completed all levels!"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+
+        <Button
+            android:id="@+id/restartGameButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Restart Game"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#FF9800" android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:elevation="8dp"
+            android:translationZ="8dp"/>
+
+        <Button
+            android:id="@+id/exitAppButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Exit App"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:backgroundTint="#F44336" android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:elevation="8dp"
+            android:translationZ="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

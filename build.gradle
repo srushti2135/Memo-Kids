@@ -1,0 +1,39 @@
+// D:\MemoKids\build.gradle (Project-level)
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // This is where the Android Gradle Plugin classpath should be defined
+        classpath 'com.android.tools.build:gradle:8.2.2'
+        // If you are using Kotlin, the Kotlin Gradle Plugin also goes here:
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0" // Match the Kotlin version in app/build.gradle
+    }
+}
+
+// This 'plugins' block is also at the project level and defines the versions centrally
+plugins {
+    id 'com.android.application' version '8.2.2' apply false // Define AGP version here
+    id 'com.android.library' version '8.2.2' apply false // If you have library modules
+    id 'org.jetbrains.kotlin.android' version '1.9.0' apply false // Define Kotlin version here
+    // Add other project-level plugins here, like Hilt, Firebase Crashlytics etc.
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> IMPORTANT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// DELETE THE ENTIRE 'allprojects { repositories {} }' BLOCK FROM HERE.
+// Repositories are now declared in settings.gradle
+/*
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+*/
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ DELETE THIS BLOCK ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

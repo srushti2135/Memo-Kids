@@ -1,0 +1,24 @@
+// D:\MemoKids\settings.gradle
+
+// THIS 'pluginManagement' BLOCK MUST BE THE VERY FIRST EXECUTABLE BLOCK IN THIS FILE
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+// Then comes 'dependencyResolutionManagement'
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Then your rootProject.name and include statements
+rootProject.name = "MemoKids" // Your project name
+include ':app' // This includes your app module
+// If you had other modules, they would be listed here too, e.g., include ':mylibrary'

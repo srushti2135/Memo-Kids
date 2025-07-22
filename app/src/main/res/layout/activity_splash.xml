@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".LevelSelectionActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="316dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/matchinglogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginRight="30dp"
+        android:text=" HAVE FUN  WITH  THIS FANTASTIC  MEMORY  GAME !"
+        android:textColor="#2196F3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="200dp"
+        android:text="Memo Kids"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>
